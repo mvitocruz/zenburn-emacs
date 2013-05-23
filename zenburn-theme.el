@@ -38,6 +38,7 @@
 (defvar zenburn-colors-alist
   '(("zenburn-fg"       . "#DCDCCC")
     ("zenburn-fg-1"     . "#656555")
+    ("zenburn-bg-2"     . "#1B1B1B")
     ("zenburn-bg-1"     . "#2B2B2B")
     ("zenburn-bg-05"    . "#383838")
     ("zenburn-bg"       . "#3F3F3F")
@@ -101,7 +102,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(header-line ((t (:foreground ,zenburn-yellow
                                   :background ,zenburn-bg-1
                                   :box (:line-width -1 :style released-button)))))
-   `(highlight ((t (:background ,zenburn-bg-05))))
+   `(highlight ((t (:background ,zenburn-bg-2))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
    `(warning ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; compilation
@@ -126,9 +127,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(grep-match-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(match ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :weight bold))))
 ;;;;; isearch
-   `(isearch ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-1))))
+   `(isearch ((t (:foreground ,zenburn-bg-2 :background ,zenburn-green))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(lazy-highlight ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-05))))
+   `(lazy-highlight ((t (:foreground ,zenburn-bg-1 :background ,zenburn-green-1))))
 
    `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
